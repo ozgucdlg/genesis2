@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="validations.js"></script>
+
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Form</title>
+</head>
+
+<body>
+    <center>
+
+        <form action="http://localhost:3000/registerUser" method="POST">
+            <div id=cont>
+                <h1> Edit Form </h1>
+                <img class="mb-4" src="images/icons/login.png" alt="" width="72" height="72">
+
+                <table>
+                    <tr>
+                        <td>
+                            <label>First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first_name" name="first_name" value="<%= user.first_name %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Last Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last_name" name="last_name" value="<%= user.last_name %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Age:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" value="<%= user.age %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="phone" name="phone" value="<%= user.phone %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email" value="<%= user.email %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password">
+                        </td>
+                    </tr>
+
+                </table>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+        </form>
+        <footer>
+            <p>&copy;2021 Dream Team</p>
+            <p id="date"></p>
+        </footer>
+    </center>
+</body>
+<script>
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+</script>
+
+<body>

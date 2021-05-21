@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="validations.js"></script>
+
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>E-COMMERCE WEB</title>
+</head>
+
+<body>
+    <center>
+
+        <form action="" method="POST">
+            <div id=cont>
+                <img class="mb-4" src="images/icons/dashboard.png" alt="" width="72" height="72">
+                <h1>Welcome
+                    <%= user.first_name + ' ' + user.last_name %>
+                </h1>
+
+
+                <a class="btn btn-primary" href="/editProfile/<%= user.email %>">Edit Profile</a>
+
+                <button type="submit" class="btn btn-primary">Go Shopping</button>
+
+
+            </div>
+        </form>
+        <footer>
+            <p>&copy;2021 Dream Team</p>
+            <p id="date"></p>
+        </footer>
+    </center>
+</body>
+<script>
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+</script>
+
+</html>

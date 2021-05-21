@@ -1,0 +1,48 @@
+body{
+  background-color:lightgray !important;
+}
+
+.button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: violet;} /* Green */
+.button2 {background-color: pink;} /* Blue */
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:hover {background-color: fuchsia}
+
+
+
+#cont {
+  width: 500px;
+  margin: 70px;
+  padding: 30px;
+  border: 2px solid beige;
+  background-color:beige}
+
+#b{
+  background-color:gray  
+}
+
+h1,label, p{
+  font-family: sans-serif;
+}
+
+input
+{
+  width: 300px;
+}
+
